@@ -8,6 +8,12 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  const newObj = {};
+  console.log(Object.entries(obj))
+  Object.keys(obj).forEach(key => {
+    newObj[key] = obj[key].trim()
+  })
+  return newObj;
 }
 
 /**
